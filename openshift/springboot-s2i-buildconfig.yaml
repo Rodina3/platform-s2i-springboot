@@ -1,6 +1,8 @@
 kind: BuildConfig
 apiVersion: v1
 metadata:
+  labels:
+    app: service-sti-builder
   name: service-sti-builder
 spec:
   source:
