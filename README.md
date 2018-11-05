@@ -3,6 +3,19 @@
 
 ## Getting started  
 
+### Usage
+#### OpenShift
+##### Create a S2I Builder
+1. Git clone *platform-s2i-springboot* repo
+    ```console
+    git clone https://github.com/platform-guild/platform-s2i-springboot.git
+    ```
+2. Import builder image into the online catalog
+    ```console
+    oc create -f openshift/springboot-s2i-buildconfig.yaml  
+    ```
+For more information about creating S2I builder image, go to [How to create S2I builder image](https://blog.openshift.com/create-s2i-builder-image/).
+
 ### Files and Directories  
 | File                   | Required? | Description                                                  |
 |------------------------|-----------|--------------------------------------------------------------|
