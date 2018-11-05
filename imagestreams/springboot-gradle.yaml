@@ -1,0 +1,9 @@
+---
+kind: ImageStream
+apiVersion: v1
+metadata:
+  annotations:
+    openshift.io/display-name: springboot-gradle-service
+  labels:
+    app: springboot-gradle-service
+  name: springboot-gradle-service

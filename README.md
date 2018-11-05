@@ -5,7 +5,7 @@
 
 ### Usage
 #### OpenShift
-##### Create a S2I Builder
+##### Create a S2I Builder Image
 1. Git clone *platform-s2i-springboot* repo
     ```console
     git clone https://github.com/platform-guild/platform-s2i-springboot.git
