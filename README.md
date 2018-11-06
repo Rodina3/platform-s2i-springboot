@@ -12,7 +12,7 @@
     ```
 2. Import builder image into the online catalog
     ```console
-    oc create -f openshift/springboot-s2i-buildconfig.yaml  
+    oc create -f imagestreams/springboot-gradle.yam
     ```
 For more information about creating S2I builder image, go to [How to create S2I builder image](https://blog.openshift.com/create-s2i-builder-image/).
 
