@@ -1,4 +1,27 @@
 ---
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  labels:
+    app: springboot-gradle-service
+  name: springboot-gradle-service
+spec:
+  source:
+    type: Git
+    git:
+      uri: https://github.com/platform-guild/platform-s2i-springboot.git
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile
+  output:
+    to:
+      kind: ImageStreamTag
+      name: springboot-gradle-service:latest
+  triggers:
+  - type: ConfigChange
+
+---
 kind: ImageStream
 apiVersion: v1
 metadata:
@@ -7,3 +30,4 @@ metadata:
   labels:
     app: springboot-gradle-service
   name: springboot-gradle-service
+
